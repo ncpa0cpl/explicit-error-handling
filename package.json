@@ -5,8 +5,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "webpack --mode production",
-    "build-watch": "webpack --watch"
+    "build": "tsc",
+    "build-watch": "tsc --watch"
   },
   "author": "Szymon Bretner",
   "license": "MIT",
