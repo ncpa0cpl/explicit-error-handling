@@ -2,8 +2,15 @@
   "name": "error-result",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/legacy/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.cjs"
+    }
+  },
   "scripts": {
     "build": "rm -rf ./dist && node ./scripts/build.mjs",
     "build-watch": "node ./scripts/build.mjs --watch"
