@@ -5,13 +5,13 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "build-watch": "tsc --watch"
+    "build": "rm -rf ./dist && node ./scripts/build.mjs",
+    "build-watch": "node ./scripts/build.mjs --watch"
   },
   "author": "Szymon Bretner",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
+    "@ncpa0cpl/nodepack": "^2.0.1",
     "@webpack-cli/init": "^1.1.3",
     "ts-loader": "^8.0.18",
     "typescript": "^4.2.3",
